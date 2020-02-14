@@ -11,7 +11,7 @@
 	function playTrack() {
 		//debugger;
 		if (globalPaused) {console.log('paused'); 
-		playTrack();
+		resumeTrack();
 		return; }
 
 
@@ -26,7 +26,7 @@
 		
 	}
 
-	function playTrack() {
+	function resumeTrack() {
 		globalPaused = false;
 		audioElement.play();
 	}
